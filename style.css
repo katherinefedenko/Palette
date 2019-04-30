@@ -1,0 +1,67 @@
+body {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 17px;
+    color: rgb(134, 134, 134);
+}
+.head__title {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+.main_layout {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+}    
+.menu {
+    display: grid;
+    margin-left: 20%;
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.palette {
+    display: grid;
+    margin-left: 20%;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#canvas {
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 10%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.canvas__box {
+    background-color: rgb(192, 191, 191);
+    cursor: pointer;
+}
+input {
+    width: 17px;
+    height: 17px; 
+    border-radius: 50%;
+}
+#red, #blue, #paintBucket,
+#move, #transform, #chooseColor {
+    cursor: pointer;
+}
+.fas {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+

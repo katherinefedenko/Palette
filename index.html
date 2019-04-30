@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CodeJam Palette</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="head__title">
+                <h1>CodeJam Palette</h1>
+            </div>
+        </header>
+        <div class="main_layout">
+            <div class="menu">
+                <div class="menu__paint-bucket" id="paintBucket">
+                    <i class="fas fa-fill-drip"></i>
+                    <span>Paint bucket</span>
+                </div>
+                <div class="menu__color-chooser" id="chooseColor">
+                    <i class="fas fa-eye-dropper"></i>
+                    <span>Choose color</span>
+                    <i class="fas fa-arrow-left"></i>
+                    <input type="color" id="pickColorFromInput">
+                </div>
+                <div class="sep"><hr></div>
+                <div class="menu__box-mover" id="move">
+                    <i class="fas fa-arrows-alt"></i>
+                    <span>Move</span>
+                </div>
+                <div class="menu__box-transformer" id="transform">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span>Transform</span>
+                </div>
+            </div>
+            <div class="palette">
+                <div class="palette__curr-color">
+                    <div class="fas">
+                        <input type="color" id="currColor">
+                    </div>
+                    <span>Current color</span>
+                </div>
+                <div class="palette__prev-color">
+                    <div class="fas">
+                        <input type="color" id="prevColor">
+                    </div>
+                    <span>Prev color</span>
+                </div>
+                <div class="sep"><hr></div>
+                <div class="palette__red-color" id="red">
+                    <div class="fas">
+                        <input type="color" id="inputRed" value="#ff0000">
+                    </div>
+                    <span>red</span>
+                </div>
+                <div class="palette__blue-color" id="blue">
+                    <div class="fas">
+                        <input type="color" id="inputBlue" value="#0400ff">
+                    </div>
+                    <span>blue</span>
+                </div>
+            </div>
+            <div id="canvas">
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+                <div class="canvas__box"></div>
+           </div>
+        </div>
+    </body>
+</html>
